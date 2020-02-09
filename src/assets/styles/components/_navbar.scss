@@ -1,0 +1,33 @@
+.main-navbar {
+  position: fixed;
+  padding: rem(20px 20px 0 20px);
+  width: 100%;
+
+  @include for(tablet) {
+    padding: rem(20px 65px 0 65px);
+  }
+}
+
+.level .main-navbar__logo {
+  display: none;
+  max-height: rem(70px);
+  height: rem(70px);
+
+  @include for(tablet) {
+    display: block;
+  }
+
+  &--small {
+    display: inline-block;
+    max-height: rem(90px);
+    height: rem(90px);
+
+    @include for(tablet) {
+      display: none;
+    }
+  }
+}
+
+.level.is-mobile .main-navbar__account-item.level-item {
+  margin-right: rem(18px);
+}

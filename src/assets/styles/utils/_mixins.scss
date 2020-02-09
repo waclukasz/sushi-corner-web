@@ -1,0 +1,11 @@
+@mixin square-size($size) {
+  width: rem($size);
+  height: rem($size);
+}
+
+@mixin icon($icon, $extension: 'svg') {
+  background-image: url('~src/assets/icons/'+$icon+'.'+$extension);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

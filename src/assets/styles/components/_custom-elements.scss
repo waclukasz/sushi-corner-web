@@ -1,0 +1,30 @@
+@mixin circle-icon($size) {
+  @include square-size($size);
+  border-radius: 50%;
+
+  i {
+    font-size: rem($size * 0.85);
+  }
+
+  & img,
+  & svg {
+    @include rem($size * 0.85);
+  }
+}
+
+.circle {
+  @include circle-icon(34px);
+
+  &--xs {
+    @include circle-icon(18px);
+  }
+
+  &--xl {
+    @include circle-icon(64px);
+  }
+
+  &__border {
+    border: 1px solid;
+    border-color: inherit;
+  }
+}
