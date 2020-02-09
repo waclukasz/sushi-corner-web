@@ -19,8 +19,8 @@
 
   &--small {
     display: inline-block;
-    max-height: rem(90px);
-    height: rem(90px);
+    max-height: rem(70px);
+    height: rem(70px);
 
     @include for(tablet) {
       display: none;

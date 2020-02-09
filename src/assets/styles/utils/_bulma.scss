@@ -1,9 +1,17 @@
 @import '~bulma/sass/utilities/_all';
 
+.is-borderless {
+  border: none;
+}
+
 .is-align-center {
   align-items: center;
 }
 
 .is-justify-center {
   justify-content: center;
+}
+
+.is-space-between {
+  justify-content: space-between;
 }

@@ -18,6 +18,10 @@
   @include color-class($grey-lighter);
 }
 
+.white {
+  @include color-class($white);
+}
+
 @for $i from 0 through 10 {
   .darken-#{10 - $i} {
     filter: brightness($i / 10);
@@ -56,4 +60,12 @@ $size: 1rem;
 
 .rounded {
   border-radius: 50%;
+}
+
+$helper-margin: rem(6px);
+@for $i from 0 through 6 {
+  .mr-#{$i} {
+    margin-right: $helper-margin;
+  }
+  $helper-margin: $helper-margin + rem(2px * $i);
 }

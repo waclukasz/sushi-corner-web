@@ -1,0 +1,77 @@
+.main-filter {
+  margin-top: rem(80px);
+}
+
+.main-filter__adventure-icon:not(:nth-last-child(1)) {
+  margin-right: rem(8px);
+}
+
+.main-filter__adventure-icon {
+  transition: border-color 0.3s;
+
+  &:hover {
+    background-color: rgba($green, 0.1);
+    border-color: $green;
+  }
+}
+
+.main-filter__drop-btn {
+  width: rem(295px);
+  height: rem(48px);
+  border: 1px solid $grey-dark;
+  border-radius: rem(24px);
+  cursor: pointer;
+  transition: color 0.2s;
+
+  &:hover,
+  &:hover i {
+    color: $white;
+  }
+
+  &:hover,
+  &:hover .button {
+    background-color: $grey-dark;
+  }
+
+  &.active,
+  &.active .button {
+    color: $white;
+    background-color: $grey-dark;
+  }
+}
+
+.main-filter__drop-trigger {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.main-filter__drop-box {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 0;
+  min-height: 100px;
+  width: calc(100% + 2px);
+  padding-top: rem(28px);
+  margin: 0 -1px;
+  background-color: $grey-dark;
+  border-bottom-left-radius: rem(30px);
+  border-bottom-right-radius: rem(30px);
+  overflow: hidden;
+}
+
+.main-filter__drop-item {
+  display: block;
+  width: 100%;
+  padding: rem(4px 0);
+  color: $grey-light;
+  text-align: center;
+  transition: background-color 150ms;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $grey-darker;
+    color: $white;
+  }
+}

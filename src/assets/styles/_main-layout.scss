@@ -1,0 +1,7 @@
+.main-container {
+  padding: rem(90px 20px 0 20px);
+
+  @include for(tablet) {
+    padding: rem(90px 65px 0 65px);
+  }
+}

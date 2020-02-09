@@ -8,7 +8,7 @@
 
   & img,
   & svg {
-    @include rem($size * 0.85);
+    @include square-size($size * 0.7);
   }
 }
 
@@ -19,12 +19,11 @@
     @include circle-icon(18px);
   }
 
-  &--xl {
-    @include circle-icon(64px);
+  &--lg {
+    @include circle-icon(48px);
   }
 
-  &__border {
-    border: 1px solid;
-    border-color: inherit;
+  &--xl {
+    @include circle-icon(64px);
   }
 }
